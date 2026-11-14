@@ -1,0 +1,41 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #10151b;
+    color: white;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    text-align: center;
+}
+
+h1 {
+    font-size: 80px;
+    letter-spacing: 12px;
+    color: #ff4655;
+}
+
+p {
+    margin: 20px;
+    letter-spacing: 5px;
+    color: #aaa;
+}
+
+button {
+    background: #ff4655;
+    color: white;
+    border: none;
+    padding: 18px 45px;
+    font-size: 18px;
+    cursor: pointer;
+}
