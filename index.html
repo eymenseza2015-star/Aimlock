@@ -4,16 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AIMLOCK</title>
+    <title>AIMLOCK FPS</title>
     <link rel="stylesheet" href="style.css">
+
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js"
+        }
+    }
+    </script>
 </head>
 <body>
-    <div class="menu">
+    <div id="menu">
         <h1>AIMLOCK</h1>
-        <p>TACTICAL FPS EXPERIENCE</p>
-        <button onclick="startGame()">OYUNA BAŞLA</button>
+        <p>TACTICAL FPS</p>
+        <button id="play">OYUNA BAŞLA</button>
     </div>
 
-    <script src="script.js"></script>
+    <div id="hud">
+        <div id="crosshair">+</div>
+        <div id="info">WASD: Hareket | ESC: Menü</div>
+    </div>
+
+    <script type="module" src="script.js"></script>
 </body>
 </html>
+
+
