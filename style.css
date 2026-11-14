@@ -6,21 +6,25 @@
 }
 
 body {
-    background: #10151b;
-    color: white;
+    overflow: hidden;
+    background: #111820;
     font-family: Arial, sans-serif;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.menu {
-    text-align: center;
+#menu {
+    position: fixed;
+    inset: 0;
+    z-index: 10;
+    background: #101820;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
 }
 
 h1 {
-    font-size: 80px;
+    font-size: 85px;
     letter-spacing: 12px;
     color: #ff4655;
 }
@@ -32,10 +36,30 @@ p {
 }
 
 button {
+    padding: 18px 45px;
+    border: 0;
     background: #ff4655;
     color: white;
-    border: none;
-    padding: 18px 45px;
-    font-size: 18px;
     cursor: pointer;
+    font-size: 18px;
 }
+
+#hud {
+    display: none;
+    color: white;
+}
+
+#crosshair {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+}
+
+#info {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
+
